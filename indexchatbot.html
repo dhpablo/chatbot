@@ -36,6 +36,38 @@
 
   <!-- 🔽 Aquí debes insertar el script del chatbot justo antes del cierre del body -->
   <!-- <script> ... tu código de chatbot va aquí ... </script> -->
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({
+	webhookUrl: '',
+	webhookConfig: {
+		method: 'POST',
+		headers: {}
+	},
+	target: '#n8n-chat',
+	mode: 'window',
+	chatInputKey: 'chatInput',
+	chatSessionKey: 'sessionId',
+	metadata: {},
+	showWelcomeScreen: false,
+	defaultLanguage: 'es',
+	initialMessages: [
+		'Hola! 👋',
+		'¿Cómo puedo ayudarte?'
+	],
+	i18n: {
+		es: {
+			title: 'Hola! 👋',
+			subtitle: "Estamos aquí para ayudarte.",
+			footer: '',
+			getStarted: 'Nueva conversación',
+			inputPlaceholder: 'Escribe tu pregunta..',
+		},
+	},
+});
+</script>
 
 </body>
 </html>
