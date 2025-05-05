@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Centre Mèdic Espuria Brava - Asistente Virtual</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    input, button {
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    #response {
+      margin-top: 20px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>Centre Mèdic Espuria Brava</h1>
+  <p>Escribe tu consulta y el asistente virtual te responderá con la información oficial del centro.</p>
+
+  <input type="text" id="userInput" placeholder="¿Cuál es tu duda?" />
+  <button onclick="sendMessage()">Enviar</button>
+
+  <p id="response"></p>
+
+  <!-- 🔽 Aquí debes insertar el script del chatbot justo antes del cierre del body -->
+  <!-- <script> ... tu código de chatbot va aquí ... </script> -->
+
+</body>
+</html>
